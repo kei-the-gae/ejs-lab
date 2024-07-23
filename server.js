@@ -52,7 +52,9 @@ const RESTAURANT = {
 
 
 app.get('/', (req, res) => {
-    res.send('Hello There!');
+    res.render('home.ejs', {
+        RESTAURANT,
+    });
 });
 
 app.listen(3000);
