@@ -15,16 +15,17 @@
             <% menu.forEach(item=> { %>
                 <% if (item.category==="mains" ) { %>
                     <li>
-                        <%= item.name %>
-                            <ul>
-                                <li>$<%= item.price %>
-                                </li>
-                                <li>Rating: <%= item.rating %>
-                                </li>
-                                <li>
-                                    <%= item.details %>
-                                </li>
-                            </ul>
+                        <%= item.rating===5 ? '⭐' : '' %>
+                            <%= item.name %>
+                                <ul>
+                                    <li>$<%= item.price %>
+                                    </li>
+                                    <li>Rating: <%= item.rating %>
+                                    </li>
+                                    <li>
+                                        <%= item.details %>
+                                    </li>
+                                </ul>
                     </li>
                     <% } %>
                         <% }) %>
@@ -34,16 +35,17 @@
             <% menu.forEach(item=> { %>
                 <% if (item.category==="sides" ) { %>
                     <li>
-                        <%= item.name %>
-                            <ul>
-                                <li>$<%= item.price %>
-                                </li>
-                                <li>Rating: <%= item.rating %>
-                                </li>
-                                <li>
-                                    <%= item.details %>
-                                </li>
-                            </ul>
+                        <%= item.rating===5 ? '⭐' : '' %>
+                            <%= item.name %>
+                                <ul>
+                                    <li>$<%= item.price %>
+                                    </li>
+                                    <li>Rating: <%= item.rating %>
+                                    </li>
+                                    <li>
+                                        <%= item.details %>
+                                    </li>
+                                </ul>
                     </li>
                     <% } %>
                         <% }) %>
@@ -53,16 +55,17 @@
             <% menu.forEach(item=> { %>
                 <% if (item.category==="desserts" ) { %>
                     <li>
-                        <%= item.name %>
-                            <ul>
-                                <li>$<%= item.price %>
-                                </li>
-                                <li>Rating: <%= item.rating %>
-                                </li>
-                                <li>
-                                    <%= item.details %>
-                                </li>
-                            </ul>
+                        <%= item.rating===5 ? '⭐' : '' %>
+                            <%= item.name %>
+                                <ul>
+                                    <li>$<%= item.price %>
+                                    </li>
+                                    <li>Rating: <%= item.rating %>
+                                    </li>
+                                    <li>
+                                        <%= item.details %>
+                                    </li>
+                                </ul>
                     </li>
                     <% } %>
                         <% }) %>
